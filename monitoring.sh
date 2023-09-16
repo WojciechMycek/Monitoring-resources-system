@@ -1,4 +1,10 @@
-disk_check_file(){	
+disk_check_file(){
+
+#Function defined to provide information about disk and check how much is exceeded
+#defining disk check
+#	writing output to disk.txt
+#	greping after defining disk
+#	awk used to get column and line that we'are interested:
 		
 	#defining disk check
 
@@ -32,6 +38,12 @@ disk_check_file(){
 		echo "ERROR: DISK SIZE EXCEDDED!!!"
 	fi
 
+}
+
+process_check_top(){
+
+	#top to file
+	top > top.txt
 }
 
 disk_check_file
