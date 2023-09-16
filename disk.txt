@@ -1,7 +1,7 @@
 Filesystem      Size  Used Avail Use% Mounted on
 tmpfs           776M  2,2M  774M   1% /run
 /dev/sda6        15G   11G  2,9G  79% /
-tmpfs           3,8G  6,6M  3,8G   1% /dev/shm
+tmpfs           3,8G  3,4M  3,8G   1% /dev/shm
 tmpfs           5,0M  4,0K  5,0M   1% /run/lock
 /dev/sda1        96M   32M   65M  33% /boot/efi
 tmpfs           776M  116K  776M   1% /run/user/1000
