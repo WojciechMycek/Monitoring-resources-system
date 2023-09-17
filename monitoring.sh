@@ -52,7 +52,12 @@ process_check_top(){
 #	address top command output to file
 #for i & awk
 #	address column and lines and then print its out
+#	then send output of awk to defined_top_lines
+#	order to human readeable format in ordered_defined_top_lines.txt
 	
+	lists_cpu_value=()
+	point="."
+
 	#top to file
 	top -b -n 1 > top.txt
 	sed '1,6d' top.txt
@@ -73,6 +78,25 @@ process_check_top(){
 	done
 	paste - - - - < defined_top_lines.txt > ordered_defined_top_lines.txt
 	cat ordered_defined_top_lines.txt
+
+	grep -n "CPU" ordered_defined_top_lines.txt
+
+	for i in {0..3}
+	do
+		line=1
+		column=$((1+$i))
+		lists_cpu_value[i]+=$(awk 'NR == '$line' {print $'$column'}' ordered_defined_top_lines.txt)
+	done
+		
+	for element in "${lists_cpu_value[@]}"
+	do
+		$element+=$(echo "$element" | sed "s/,/$point/g")
+	done
+
+	for element in "${lists_cpu_value[@]}"
+	do                                                       	
+		echo $element
+	done
 }
 
 process_check_top
