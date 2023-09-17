@@ -104,7 +104,15 @@ process_check_top(){
 	do	
 		echo "Przeformatowane wartosci w liscie $element"
 	done
-
+	
+	if [ $lists_cpu_value_transformed[1] == $lists_cpu_value_transformed[2] ] && [ $lists_cpu_value_transformed[2] == $lists_cpu_value_transformed[3] ]
+	then
+		echo "All process takes the same exxact amount of memory"
+		echo "Memory of value eq: $lists_cpu_values[1]"
+	elif [ $lists_cpu_value_transformed[1] > $lists_cpu_value_transformed[2] ] && [ $lists_cpu_value_transformed[2] > $lists_cpu_value_transformed[3] ]
+	then
+		echo "The biggest is: $lists_cpu_value_transformed[1]"
+	fi
 }
 
 process_check_top
