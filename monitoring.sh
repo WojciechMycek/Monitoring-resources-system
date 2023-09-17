@@ -56,24 +56,23 @@ process_check_top(){
 	#top to file
 	top -b -n 1 > top.txt
 	sed '1,6d' top.txt
+	clear
 
 	#grep -n "CPU" top.txt
 	#cat cpu.txt
 
 	for i in {1..5}
 	do	
-		echo -e "\n"
 		for j in {1..4}
 		do	
 			column=$((8+$i))
 			line=$((6+$j))
 			argument=$(awk 'NR == '$line' {print $'$column'}' top.txt)
-			echo $argument
+			awk 'NR == '$line' {print $'$column'}' top.txt >> defined_top_lines.txt
 		done
 	done
-
-	$argument >> defined_top_lines.txt
-	
+	paste - - - - < defined_top_lines.txt > ordered_defined_top_lines.txt
+	cat ordered_defined_top_lines.txt
 }
 
 process_check_top
