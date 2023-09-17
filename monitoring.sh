@@ -87,16 +87,12 @@ process_check_top(){
 		column=$((1+$i))
 		lists_cpu_value[i]+=$(awk 'NR == '$line' {print $'$column'}' ordered_defined_top_lines.txt)
 	done
-		
-	for element in "${lists_cpu_value[@]}"
-	do
-		$element+=$(echo "$element" | sed "s/,/$point/g")
-	done
 
-	for element in "${lists_cpu_value[@]}"
-	do                                                       	
-		echo $element
+	for element in ${lists_cpu_value[@]}
+	do
+		echo "$element"
 	done
+		
 }
 
 process_check_top

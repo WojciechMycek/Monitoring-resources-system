@@ -38,3 +38,23 @@ kthreadd
 
 
 
+%CPU
+11,8
+5,9
+5,9
+%MEM
+3,6
+0,8
+0,0
+TIME+
+6:25.68
+2:19.61
+0:01.98
+COMMAND
+gnome-shell
+gnome-terminal-
+kworker/1:0-events
+
+
+
+
