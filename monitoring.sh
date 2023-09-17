@@ -2,9 +2,14 @@ disk_check_file(){
 
 #Function defined to provide information about disk and check how much is exceeded
 #defining disk check
-#	writing output to disk.txt
-#	greping after defining disk
-#	awk used to get column and line that we'are interested:
+#	write output to disk.txt
+#	grep after defining disk
+#	awk used to get column and line
+#writing disk size
+#	take size of disk to argument
+#define str to int from disk size
+#	use sed to redefined output to redfine str to int
+#	then transfere str to int and checkig if file size is meeting requirments
 		
 	#defining disk check
 
@@ -42,6 +47,7 @@ disk_check_file(){
 
 process_check_top(){
 
+#Function defined to provide information about process in real time
 	#top to file
 	top > top.txt
 }
