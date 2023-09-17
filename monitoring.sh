@@ -48,8 +48,23 @@ disk_check_file(){
 process_check_top(){
 
 #Function defined to provide information about process in real time
+	
 	#top to file
-	top > top.txt
+	top -b -n 1 > top.txt
+	sed '1,6d' top.txt
+        awk '{if(NR == 7) {print $9}}' top.txt > cpu.txt
+	cat cpu.txt	
+	for i in {1..5}
+	do
+		for j in {1..3}
+		do	
+			a=$((6+$i))
+			echo "$a"
+			awk '{if(NR == $((6+'$i'))){print '8+$j'}}' top.txt >> defined_top_lines.txt
+			echo "$i, $j"
+		done
+	done
+	
 }
 
-disk_check_file
+process_check_top
