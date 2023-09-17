@@ -52,16 +52,16 @@ process_check_top(){
 	#top to file
 	top -b -n 1 > top.txt
 	sed '1,6d' top.txt
-        awk '{if(NR == 7) {print $9}}' top.txt > cpu.txt
-	cat cpu.txt	
+	grep -n "CPU" top.txt
+	#cat cpu.txt	
 	for i in {1..5}
 	do
-		for j in {1..3}
+		for j in {1..4}
 		do	
-			a=$((6+$i))
-			echo "$a"
-			awk '{if(NR == $((6+'$i'))){print '8+$j'}}' top.txt >> defined_top_lines.txt
-			echo "$i, $j"
+			column=$((8+$i))
+			line=$((6+$j))
+			argument=$(awk 'NR == '$line' {print $'$column'}' top.txt)
+			echo $argument
 		done
 	done
 	
