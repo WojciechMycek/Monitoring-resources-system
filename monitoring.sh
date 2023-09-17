@@ -112,6 +112,11 @@ process_check_top(){
 	elif [ $lists_cpu_value_transformed[1] > $lists_cpu_value_transformed[2] ] && [ $lists_cpu_value_transformed[2] > $lists_cpu_value_transformed[3] ]
 	then
 		echo "The biggest is: $lists_cpu_value_transformed[1]"
+	elif [ $lists_cpu_value_transformed[2] > $lists_cpu_value_transformed[1] ] && [ $lists_cpu_value_transformed[2] > $lists_cpu_value_transformed[3] ]
+	then
+		echo "The biggest is: $lists_cpu_value_transformed[2]"
+	else
+		echo "The biggest is $lists_cpu_value_transformed[3]"
 	fi
 }
 
