@@ -1,16 +1,16 @@
-top - 13:03:36 up  1:37,  1 user,  load average: 0,25, 0,33, 0,37
-Tasks: 219 total,   1 running, 218 sleeping,   0 stopped,   0 zombie
-%Cpu(s):  5,6 us, 11,1 sy,  0,0 ni, 83,3 id,  0,0 wa,  0,0 hi,  0,0 si,  0,0 st
-MiB Mem :   7754,2 total,   3462,2 free,   1661,2 used,   2630,8 buff/cache
-MiB Swap:   1560,0 total,   1560,0 free,      0,0 used.   5228,9 avail Mem 
+top - 15:20:00 up  1:19,  1 user,  load average: 0,19, 0,24, 0,27
+Tasks: 206 total,   1 running, 205 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  2,9 us,  8,8 sy,  0,0 ni, 88,2 id,  0,0 wa,  0,0 hi,  0,0 si,  0,0 st
+MiB Mem :   7754,2 total,   3892,3 free,   1198,8 used,   2663,1 buff/cache
+MiB Swap:   1560,0 total,   1560,0 free,      0,0 used.   5728,3 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-   1441 wojtek    20   0 4587824 283956 140472 S  11,8   3,6   6:25.68 gnome-shell
-   3028 wojtek    20   0  838296  62868  47000 S   5,9   0,8   2:19.61 gnome-terminal-
-   7581 root      20   0       0      0      0 I   5,9   0,0   0:01.98 kworker/1:0-events
-   7888 wojtek    20   0   15608   4096   3328 R   5,9   0,1   0:00.03 top
-      1 root      20   0  166752  12044   8432 S   0,0   0,2   0:02.41 systemd
-      2 root      20   0       0      0      0 S   0,0   0,0   0:00.00 kthreadd
+     54 root      20   0       0      0      0 I   5,9   0,0   0:07.09 kworker/1:2-events
+   1432 wojtek    20   0 4574092 276864 139340 S   5,9   3,5   2:31.03 gnome-shell
+   1624 wojtek    20   0  317624  12032   7104 S   5,9   0,2   0:23.36 ibus-daemon
+   5883 wojtek    20   0   15608   3968   3328 R   5,9   0,0   0:00.02 top
+      1 root      20   0  166752  12040   8376 S   0,0   0,2   0:02.16 systemd
+      2 root      20   0       0      0      0 S   0,0   0,0   0:00.01 kthreadd
       3 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 rcu_gp
       4 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 rcu_par_gp
       5 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 slub_flushwq
@@ -20,15 +20,15 @@ MiB Swap:   1560,0 total,   1560,0 free,      0,0 used.   5228,9 avail Mem
      11 root      20   0       0      0      0 I   0,0   0,0   0:00.00 rcu_tasks_kthread
      12 root      20   0       0      0      0 I   0,0   0,0   0:00.00 rcu_tasks_rude_kthread
      13 root      20   0       0      0      0 I   0,0   0,0   0:00.00 rcu_tasks_trace_kthread
-     14 root      20   0       0      0      0 S   0,0   0,0   0:01.22 ksoftirqd/0
-     15 root      20   0       0      0      0 I   0,0   0,0   0:05.18 rcu_preempt
-     16 root      rt   0       0      0      0 S   0,0   0,0   0:00.05 migration/0
+     14 root      20   0       0      0      0 S   0,0   0,0   0:01.44 ksoftirqd/0
+     15 root      20   0       0      0      0 I   0,0   0,0   0:02.01 rcu_preempt
+     16 root      rt   0       0      0      0 S   0,0   0,0   0:00.02 migration/0
      17 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 idle_inject/0
      19 root      20   0       0      0      0 S   0,0   0,0   0:00.00 cpuhp/0
      20 root      20   0       0      0      0 S   0,0   0,0   0:00.00 cpuhp/1
      21 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 idle_inject/1
-     22 root      rt   0       0      0      0 S   0,0   0,0   0:00.34 migration/1
-     23 root      20   0       0      0      0 S   0,0   0,0   0:02.28 ksoftirqd/1
+     22 root      rt   0       0      0      0 S   0,0   0,0   0:00.31 migration/1
+     23 root      20   0       0      0      0 S   0,0   0,0   0:00.81 ksoftirqd/1
      25 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/1:0H-events_highpri
      26 root      20   0       0      0      0 S   0,0   0,0   0:00.00 kdevtmpfs
      27 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 inet_frag_wq
@@ -36,7 +36,7 @@ MiB Swap:   1560,0 total,   1560,0 free,      0,0 used.   5228,9 avail Mem
      29 root      20   0       0      0      0 S   0,0   0,0   0:00.00 khungtaskd
      32 root      20   0       0      0      0 S   0,0   0,0   0:00.00 oom_reaper
      33 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 writeback
-     34 root      20   0       0      0      0 S   0,0   0,0   0:00.46 kcompactd0
+     34 root      20   0       0      0      0 S   0,0   0,0   0:00.16 kcompactd0
      35 root      25   5       0      0      0 S   0,0   0,0   0:00.00 ksmd
      37 root      39  19       0      0      0 S   0,0   0,0   0:00.00 khugepaged
      38 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kintegrityd
@@ -48,179 +48,166 @@ MiB Swap:   1560,0 total,   1560,0 free,      0,0 used.   5228,9 avail Mem
      44 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 edac-poller
      45 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 devfreq_wq
      46 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 watchdogd
-     47 root       0 -20       0      0      0 I   0,0   0,0   0:00.48 kworker/1:1H-events_highpri
+     47 root       0 -20       0      0      0 I   0,0   0,0   0:00.19 kworker/1:1H-events_highpri
      48 root      20   0       0      0      0 S   0,0   0,0   0:00.00 kswapd0
      49 root      20   0       0      0      0 S   0,0   0,0   0:00.00 ecryptfs-kthread
      50 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kthrotld
      51 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 acpi_thermal_pm
      52 root      20   0       0      0      0 S   0,0   0,0   0:00.00 xenbus_probe
-     55 root      20   0       0      0      0 S   0,0   0,0   0:00.11 hwrng
+     56 root      20   0       0      0      0 S   0,0   0,0   0:00.04 hwrng
      58 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 mld
-     59 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 ipv6_addrconf
-     66 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kstrp
-     68 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 zswap-shrink
-     69 root       0 -20       0      0      0 I   0,0   0,0   0:03.30 kworker/u9:0-hci0
-     73 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 charger_manager
-     95 root       0 -20       0      0      0 I   0,0   0,0   0:01.05 kworker/0:1H-events_highpri
+     59 root       0 -20       0      0      0 I   0,0   0,0   0:00.37 kworker/0:1H-events_highpri
+     60 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 ipv6_addrconf
+     67 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kstrp
+     69 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 zswap-shrink
+     70 root       0 -20       0      0      0 I   0,0   0,0   0:02.33 kworker/u9:0-i915_flip
+     74 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 charger_manager
     118 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 sdhci
     119 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 sdhci
-    120 root      20   0       0      0      0 S   0,0   0,0   0:00.00 scsi_eh_0
-    125 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 scsi_tmf_0
-    126 root      20   0       0      0      0 S   0,0   0,0   0:00.00 scsi_eh_1
-    127 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 scsi_tmf_1
-    128 root     -51   0       0      0      0 S   0,0   0,0   0:08.37 irq/124-ALPS0001:01
-    143 root      20   0       0      0      0 S   0,0   0,0   0:00.00 spi1
-    145 root      20   0       0      0      0 S   0,0   0,0   0:00.00 spi2
-    146 root      20   0       0      0      0 S   0,0   0,0   0:00.00 spi3
-    166 root      20   0       0      0      0 S   0,0   0,0   0:00.30 jbd2/sda6-8
-    167 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 ext4-rsv-conver
-    206 root      19  -1   57208  28756  27260 S   0,0   0,4   0:01.39 systemd-journal
-    249 root      20   0   26832   7044   4764 S   0,0   0,1   0:00.42 systemd-udevd
-    304 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kmemstick
-    352 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 card0-crtc0
-    354 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 card0-crtc1
-    355 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 card0-crtc2
-    360 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 cfg80211
-    365 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 cryptd
-    380 root       0 -20       0      0      0 I   0,0   0,0   0:04.10 kworker/u9:1-i915_flip
-    525 systemd+  20   0   14824   6792   6016 S   0,0   0,1   0:15.64 systemd-oomd
-    528 systemd+  20   0   25660  13968   9584 S   0,0   0,2   0:01.52 systemd-resolve
-    529 systemd+  20   0   89376   7524   6700 S   0,0   0,1   0:00.16 systemd-timesyn
-    577 root      20   0  242504   7960   7000 S   0,0   0,1   0:00.42 accounts-daemon
-    578 root      20   0    2812   1924   1792 S   0,0   0,0   0:02.91 acpid
-    580 avahi     20   0    7624   4124   3740 S   0,0   0,1   0:00.40 avahi-daemon
-    581 root      20   0   10592   5468   4976 S   0,0   0,1   0:00.12 bluetoothd
-    582 root      20   0   12024   2820   2688 S   0,0   0,0   0:00.02 cron
-    583 message+  20   0   11116   6776   4204 S   0,0   0,1   0:03.63 dbus-daemon
-    586 root      20   0  263664  19460  16120 S   0,0   0,2   0:04.67 NetworkManager
-    595 root      20   0   82760   3968   3584 S   0,0   0,0   0:01.07 irqbalance
-    599 root      20   0   43592  21396  12020 S   0,0   0,3   0:00.16 networkd-dispat
-    600 root      20   0  236944  10428   7092 S   0,0   0,1   0:02.77 polkitd
-    603 root      20   0  242588   7632   6920 S   0,0   0,1   0:00.05 power-profiles-
-    611 syslog    20   0  222400   6352   4496 S   0,0   0,1   0:00.23 rsyslogd
-    614 root      20   0 1393368  32268  20336 S   0,0   0,4   0:02.56 snapd
-    626 root      20   0  238904   7040   6436 S   0,0   0,1   0:00.03 switcheroo-cont
-    635 root      20   0   48216   8300   7080 S   0,0   0,1   0:00.38 systemd-logind
-    637 root      20   0  131120   9308   8512 S   0,0   0,1   0:03.32 thermald
-    639 root      20   0  393208  14220  10772 S   0,0   0,2   0:01.36 udisksd
-    644 root      20   0   17780  11624   9656 S   0,0   0,1   0:00.79 wpa_supplicant
-    672 avahi     20   0    7440   1276   1020 S   0,0   0,0   0:00.00 avahi-daemon
-    696 root      20   0  318056  12596  10624 S   0,0   0,2   0:00.24 ModemManager
-    711 root      20   0   75020  13472  11672 S   0,0   0,2   0:00.05 cupsd
-    730 root      20   0  120672  23700  14968 S   0,0   0,3   0:00.13 unattended-upgr
-    741 root      20   0  243756   9168   7984 S   0,0   0,1   0:00.06 gdm3
-    800 rtkit     21   1  154000   3180   2940 S   0,0   0,0   0:00.15 rtkit-daemon
-    905 root      20   0  172620  11716  10148 S   0,0   0,1   0:00.06 cups-browsed
-    919 kernoops  20   0   13084   2180   1792 S   0,0   0,0   0:00.01 kerneloops
-    926 kernoops  20   0   13084   2340   1860 S   0,0   0,0   0:00.00 kerneloops
-   1011 root      20   0  244876   9260   7836 S   0,0   0,1   0:00.44 upowerd
-   1057 root      20   0  375344  38516  19436 S   0,0   0,5   0:15.29 packagekitd
-   1210 colord    20   0  247992  13492   9740 S   0,0   0,2   0:00.27 colord
-   1271 root      20   0  320736  10960   9304 S   0,0   0,1   0:00.13 gdm-session-wor
-   1279 wojtek    20   0   18008  10788   8160 S   0,0   0,1   0:01.08 systemd
-   1280 wojtek    20   0  104504   5932   1772 S   0,0   0,1   0:00.00 (sd-pam)
-   1286 wojtek     9 -11   42380   6804   5584 S   0,0   0,1   0:00.06 pipewire
-   1287 wojtek    20   0   26144   6740   5504 S   0,0   0,1   0:00.06 pipewire-media-
-   1288 wojtek     9 -11 2473636  27176  21456 S   0,0   0,3   0:01.52 pulseaudio
-   1296 wojtek    20   0  243416   7848   6732 S   0,0   0,1   0:00.23 gnome-keyring-d
-   1302 wojtek    20   0   10800   7248   4228 S   0,0   0,1   0:01.55 dbus-daemon
-   1308 wojtek    20   0  243172   8140   7168 S   0,0   0,1   0:00.05 gvfsd
-   1313 wojtek    20   0  380888   6784   6000 S   0,0   0,1   0:00.01 gvfsd-fuse
-   1326 wojtek    20   0  539432   7796   6984 S   0,0   0,1   0:00.19 xdg-document-po
-   1330 wojtek    20   0  238680   6380   5820 S   0,0   0,1   0:00.02 xdg-permission-
-   1336 root      20   0    2792   2036   1920 S   0,0   0,0   0:00.00 fusermount3
-   1338 wojtek    20   0  164916   6024   5508 S   0,0   0,1   0:00.01 gdm-wayland-ses
-   1343 wojtek    20   0  225572  15916  14028 S   0,0   0,2   0:00.05 gnome-session-b
-   1377 wojtek    39  19  709732  27760  18804 S   0,0   0,3   0:00.98 tracker-miner-f
-   1398 wojtek    20   0   94436   5660   5200 S   0,0   0,1   0:00.00 gnome-session-c
-   1410 wojtek    20   0  521640  17780  14980 S   0,0   0,2   0:00.22 gnome-session-b
-   1427 wojtek    20   0  318416  10704   8736 S   0,0   0,1   0:00.42 gvfs-udisks2-vo
-   1434 wojtek    20   0  309580   7952   7104 S   0,0   0,1   0:00.01 at-spi-bus-laun
-   1454 wojtek    20   0    8560   4632   4100 S   0,0   0,1   0:00.04 dbus-daemon
-   1456 wojtek    20   0  317732   8096   6972 S   0,0   0,1   0:00.47 gvfs-afc-volume
-   1464 wojtek    20   0  238984   6804   6136 S   0,0   0,1   0:00.02 gvfs-mtp-volume
-   1470 wojtek    20   0  240068   7220   6372 S   0,0   0,1   0:00.03 gvfs-gphoto2-vo
-   1476 wojtek    20   0  239160   6632   5984 S   0,0   0,1   0:00.02 gvfs-goa-volume
-   1480 wojtek    20   0  576676  40760  33232 S   0,0   0,5   0:00.13 goa-daemon
-   1491 wojtek    20   0  340928  15536  13480 S   0,0   0,2   0:00.07 goa-identity-se
-   1538 root      10 -10       0      0      0 S   0,0   0,0   0:00.00 krfcommd
-   1551 wojtek    20   0  582888  21392  18392 S   0,0   0,3   0:00.09 gnome-shell-cal
-   1557 wojtek    20   0 1074660  26260  22212 S   0,0   0,3   0:00.14 evolution-sourc
-   1566 wojtek    20   0 1187024  31820  26904 S   0,0   0,4   0:00.23 evolution-calen
-   1574 wojtek    20   0  156964   5956   5292 S   0,0   0,1   0:00.02 dconf-service
-   1578 wojtek    20   0  756668  28940  25144 S   0,0   0,4   0:00.13 evolution-addre
-   1594 wojtek    20   0  317392   9240   7880 S   0,0   0,1   0:00.06 gvfsd-trash
-   1604 wojtek    20   0  162680   7488   6700 S   0,0   0,1   0:00.02 at-spi2-registr
-   1608 wojtek    20   0 2602024  28212  22936 S   0,0   0,4   0:00.11 gjs
-   1617 wojtek    20   0    2888   1540   1536 S   0,0   0,0   0:00.00 sh
-   1618 wojtek    20   0  312912   7132   6432 S   0,0   0,1   0:00.01 gsd-a11y-settin
-   1620 wojtek    20   0  317816  12332   7128 S   0,0   0,2   0:49.48 ibus-daemon
-   1622 wojtek    20   0  465168  27036  21016 S   0,0   0,3   0:00.27 gsd-color
-   1623 wojtek    20   0  377956  16588  14452 S   0,0   0,2   0:00.04 gsd-datetime
-   1624 wojtek    20   0  314608   8244   7220 S   0,0   0,1   0:00.36 gsd-housekeepin
-   1626 wojtek    20   0  343060  22312  17424 S   0,0   0,3   0:00.16 gsd-keyboard
-   1632 wojtek    20   0  645484  27420  21656 S   0,0   0,3   0:00.40 gsd-media-keys
-   1635 wojtek    20   0  644308  27764  21560 S   0,0   0,3   0:00.29 gsd-power
-   1636 wojtek    20   0  252384  11632  10120 S   0,0   0,1   0:00.03 gsd-print-notif
-   1642 wojtek    20   0  460384   6912   6144 S   0,0   0,1   0:00.04 gsd-rfkill
-   1644 wojtek    20   0  238816   6528   5888 S   0,0   0,1   0:00.01 gsd-screensaver
-   1646 wojtek    20   0  468428  11152   9304 S   0,0   0,1   0:01.36 gsd-sharing
-   1647 wojtek    20   0  388524   8452   7484 S   0,0   0,1   0:00.02 gsd-smartcard
-   1651 wojtek    20   0  321828   9856   8704 S   0,0   0,1   0:00.02 gsd-sound
-   1652 wojtek    20   0  343644  22900  17668 S   0,0   0,3   0:00.18 gsd-wacom
-   1699 wojtek    20   0  166008   7428   6708 S   0,0   0,1   0:00.01 ibus-memconf
-   1701 wojtek    20   0  350312  29644  18608 S   0,0   0,4   0:06.79 ibus-extension-
-   1704 wojtek    20   0  239788   7572   6912 S   0,0   0,1   0:00.13 ibus-portal
-   1712 wojtek    20   0   76144  14460  12716 S   0,0   0,2   0:00.13 snapd-desktop-i
-   1718 wojtek    20   0  232264   7664   6176 S   0,0   0,1   0:00.03 gsd-disk-utilit
-   1724 wojtek    20   0  817372  66812  51452 S   0,0   0,8   0:00.39 evolution-alarm
-   1780 wojtek    20   0  344884  15120  13184 S   0,0   0,2   0:00.03 gsd-printer
-   1818 wojtek    20   0  913124 121212  51044 S   0,0   1,5   0:05.08 snap-store
-   1855 wojtek    20   0  306180  22736  15556 S   0,0   0,3   0:00.21 snapd-desktop-i
-   1860 wojtek    20   0  166008   7560   6788 S   0,0   0,1   0:17.72 ibus-engine-sim
-   1868 wojtek    20   0  626344  14128  11512 S   0,0   0,2   0:00.63 xdg-desktop-por
-   1877 wojtek    20   0  378060  28704  20444 S   0,0   0,4   0:00.59 xdg-desktop-por
-   1974 wojtek    20   0 2536500  28032  22800 S   0,0   0,4   0:00.14 gjs
-   2001 wojtek    20   0  346936  26196  18884 S   0,0   0,3   0:00.31 xdg-desktop-por
-   2076 root      20   0  395908  32224  26816 S   0,0   0,4   0:01.31 fwupd
-   2081 wojtek    20   0  165568   6728   6124 S   0,0   0,1   0:00.01 gvfsd-metadata
-   3046 wojtek    20   0   13928   5572   3816 S   0,0   0,1   0:01.23 bash
-   3089 wojtek    20   0  422084  28704  21376 S   0,0   0,4   0:00.51 update-notifier
-   3369 wojtek    20   0  585636  99920  59712 S   0,0   1,3   0:22.68 Xwayland
-   3379 wojtek    20   0  680196  80864  62200 S   0,0   1,0   0:00.40 gsd-xsettings
-   3406 wojtek    20   0  196632  25264  18172 S   0,0   0,3   0:00.19 ibus-x11
-   3647 wojtek    20   0 1163288  18840  13112 S   0,0   0,2   0:00.05 snap
-   4114 wojtek    20   0   11,8g 380128 188024 S   0,0   4,8   2:37.81 firefox
-   4247 wojtek    20   0  210612  34636  26560 S   0,0   0,4   0:00.09 Socket Process
-   4263 wojtek    20   0 2449592 121720  80120 S   0,0   1,5   0:03.47 Privileged Cont
-   4361 wojtek    20   0 2422492  84328  64588 S   0,0   1,1   0:00.82 WebExtensions
-   4504 wojtek    20   0 2615820 193940  92104 S   0,0   2,4   3:34.54 Isolated Web Co
-   4542 wojtek    20   0 2504096 145456  84472 S   0,0   1,8   0:07.30 Isolated Web Co
-   4568 wojtek    20   0 2615060 135748  90580 S   0,0   1,7   0:07.11 Isolated Web Co
-   4632 wojtek    20   0  935044  75036  51556 S   0,0   0,9   0:06.57 nautilus
-   4772 wojtek    20   0   36,6g 138336 109740 S   0,0   1,7   0:04.89 github-desktop
-   4777 wojtek    20   0   32,2g  48856  40456 S   0,0   0,6   0:00.05 github-desktop
-   4778 wojtek    20   0   32,2g  48896  40576 S   0,0   0,6   0:00.06 github-desktop
-   4780 wojtek    20   0   32,2g  10372   2048 S   0,0   0,1   0:00.00 github-desktop
-   4804 wojtek    20   0   32,5g 129308  91968 S   0,0   1,6   0:08.48 github-desktop
-   4819 wojtek    20   0   32,3g  67268  57804 S   0,0   0,8   0:00.72 github-desktop
-   4835 wojtek    20   0   48,5g 191276 114080 S   0,0   2,4   0:20.28 github-desktop
-   5291 wojtek    20   0 2708036 210608  97580 S   0,0   2,7   0:25.57 Isolated Web Co
-   5332 wojtek    20   0 2395808  59392  47476 S   0,0   0,7   0:00.20 Web Content
-   5352 wojtek    20   0  328804  41192  31036 S   0,0   0,5   0:00.13 RDD Process
-   5353 wojtek    20   0  329828  41612  31360 S   0,0   0,5   0:00.13 Utility Process
-   5377 wojtek    20   0 2395800  59676  47768 S   0,0   0,8   0:00.21 Web Content
-   5397 wojtek    20   0 2395808  59888  47992 S   0,0   0,8   0:00.21 Web Content
-   5568 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 irq/125-mei_me
-   5569 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 irq/39-mmc0
-   5570 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 irq/42-mmc1
-   5579 root      20   0       0      0      0 I   0,0   0,0   0:03.92 kworker/u8:30-i915
-   5585 root      20   0       0      0      0 I   0,0   0,0   0:04.00 kworker/u8:36-events_power_efficient
-   5733 wojtek    20   0 2735984  65152  49152 S   0,0   0,8   0:04.58 gjs
-   7113 root      20   0       0      0      0 I   0,0   0,0   0:05.36 kworker/0:1-events
-   7428 root      20   0       0      0      0 I   0,0   0,0   0:01.83 kworker/u8:0-events_power_efficient
-   7745 root      20   0       0      0      0 I   0,0   0,0   0:00.00 kworker/0:0-events
-   7856 root      20   0       0      0      0 I   0,0   0,0   0:00.27 kworker/1:2-events
-   7875 root      20   0       0      0      0 I   0,0   0,0   0:00.00 kworker/0:2-events
-   7884 root      20   0       0      0      0 I   0,0   0,0   0:00.00 kworker/1:1
-   7887 wojtek    20   0   13928   3764   1920 S   0,0   0,0   0:00.00 bash
+    123 root      20   0       0      0      0 S   0,0   0,0   0:00.00 scsi_eh_0
+    124 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 scsi_tmf_0
+    125 root      20   0       0      0      0 S   0,0   0,0   0:00.00 scsi_eh_1
+    126 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 scsi_tmf_1
+    128 root     -51   0       0      0      0 S   0,0   0,0   0:00.86 irq/124-ALPS0001:01
+    141 root      20   0       0      0      0 S   0,0   0,0   0:00.00 spi1
+    142 root      20   0       0      0      0 S   0,0   0,0   0:00.00 spi2
+    143 root      20   0       0      0      0 S   0,0   0,0   0:00.00 spi3
+    163 root      20   0       0      0      0 S   0,0   0,0   0:00.12 jbd2/sda6-8
+    164 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 ext4-rsv-conver
+    203 root      19  -1   64752  22768  21272 S   0,0   0,3   0:00.85 systemd-journal
+    232 root      20   0   27260   7452   4712 S   0,0   0,1   0:00.72 systemd-udevd
+    300 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kmemstick
+    315 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/u9:2-hci0
+    325 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 cryptd
+    342 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 cfg80211
+    407 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 card0-crtc0
+    408 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 card0-crtc1
+    409 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 card0-crtc2
+    441 systemd+  20   0   14824   6788   6016 S   0,0   0,1   0:05.59 systemd-oomd
+    445 systemd+  20   0   25660  14076   9656 S   0,0   0,2   0:00.33 systemd-resolve
+    446 systemd+  20   0   89376   7364   6532 S   0,0   0,1   0:00.16 systemd-timesyn
+    541 root      20   0  242504   7876   6952 S   0,0   0,1   0:00.22 accounts-daemon
+    543 root      20   0    2812   1920   1792 S   0,0   0,0   0:01.30 acpid
+    553 avahi     20   0    7624   4132   3708 S   0,0   0,1   0:00.15 avahi-daemon
+    554 root      20   0   10592   5368   4968 S   0,0   0,1   0:00.12 bluetoothd
+    558 root      20   0   12024   2948   2696 S   0,0   0,0   0:00.00 cron
+    560 message+  20   0   11084   6784   4224 S   0,0   0,1   0:01.78 dbus-daemon
+    567 root      20   0  263600  19236  15896 S   0,0   0,2   0:01.09 NetworkManager
+    578 root      20   0   82760   4036   3672 S   0,0   0,1   0:00.40 irqbalance
+    584 root      20   0   43592  21612  12160 S   0,0   0,3   0:00.17 networkd-dispat
+    586 root      20   0  236944  10636   7096 S   0,0   0,1   0:02.46 polkitd
+    588 root      20   0  242580   7628   6868 S   0,0   0,1   0:00.05 power-profiles-
+    591 syslog    20   0  222400   6316   4540 S   0,0   0,1   0:00.15 rsyslogd
+    595 root      20   0 1319636  32400  20184 S   0,0   0,4   0:16.27 snapd
+    610 root      20   0  238904   6948   6332 S   0,0   0,1   0:00.04 switcheroo-cont
+    617 root      20   0   48240   8280   7040 S   0,0   0,1   0:00.37 systemd-logind
+    628 root      20   0  131120   9400   8624 S   0,0   0,1   0:00.81 thermald
+    629 root      20   0  393228  14256  10808 S   0,0   0,2   0:00.72 udisksd
+    631 root      20   0   17684  11576   9644 S   0,0   0,1   0:00.11 wpa_supplicant
+    649 avahi     20   0    7440   1480   1140 S   0,0   0,0   0:00.00 avahi-daemon
+    672 root      20   0  318056  12688  10652 S   0,0   0,2   0:00.23 ModemManager
+    682 root      20   0   75020  13412  11696 S   0,0   0,2   0:00.03 cupsd
+    719 root      20   0  120672  23816  15104 S   0,0   0,3   0:00.13 unattended-upgr
+    729 root      20   0  243756   9232   8064 S   0,0   0,1   0:00.05 gdm3
+    776 rtkit     21   1  154000   3316   3020 S   0,0   0,0   0:00.06 rtkit-daemon
+    886 root      20   0  172620  11660  10088 S   0,0   0,1   0:00.04 cups-browsed
+    896 kernoops  20   0   13084   2184   1792 S   0,0   0,0   0:00.00 kerneloops
+    906 kernoops  20   0   13084   2276   1856 S   0,0   0,0   0:00.00 kerneloops
+   1011 root      20   0  244884   9044   7608 S   0,0   0,1   0:00.25 upowerd
+   1054 root      20   0  375204  37840  19108 S   0,0   0,5   0:07.16 packagekitd
+   1210 colord    20   0  247992  13440   9704 S   0,0   0,2   0:00.26 colord
+   1273 root      20   0  320700  11220   9468 S   0,0   0,1   0:00.12 gdm-session-wor
+   1281 wojtek    20   0   18016  10692   8044 S   0,0   0,1   0:01.09 systemd
+   1282 wojtek    20   0  104504   5892   1752 S   0,0   0,1   0:00.00 (sd-pam)
+   1288 wojtek     9 -11   42388   6960   5624 S   0,0   0,1   0:00.05 pipewire
+   1289 wojtek    20   0   26144   6820   5556 S   0,0   0,1   0:00.04 pipewire-media-
+   1290 wojtek     9 -11 1949348  27004  21276 S   0,0   0,3   0:00.82 pulseaudio
+   1295 wojtek    20   0  243428   7700   6632 S   0,0   0,1   0:00.12 gnome-keyring-d
+   1307 wojtek    20   0   10208   6428   4232 S   0,0   0,1   0:01.08 dbus-daemon
+   1309 wojtek    20   0  243168   7972   7084 S   0,0   0,1   0:00.04 gvfsd
+   1319 wojtek    20   0  380888   6896   6016 S   0,0   0,1   0:00.00 gvfsd-fuse
+   1321 wojtek    20   0  539432   7556   6800 S   0,0   0,1   0:00.10 xdg-document-po
+   1330 wojtek    20   0  238680   6432   5824 S   0,0   0,1   0:00.01 xdg-permission-
+   1337 root      20   0    2792   2036   1920 S   0,0   0,0   0:00.00 fusermount3
+   1342 wojtek    20   0  164916   6272   5760 S   0,0   0,1   0:00.01 gdm-wayland-ses
+   1346 wojtek    20   0  225572  16012  14128 S   0,0   0,2   0:00.05 gnome-session-b
+   1383 wojtek    39  19  709728  27940  19140 S   0,0   0,4   0:00.91 tracker-miner-f
+   1402 wojtek    20   0   94436   5512   5120 S   0,0   0,1   0:00.00 gnome-session-c
+   1414 wojtek    20   0  595372  17816  14956 S   0,0   0,2   0:00.21 gnome-session-b
+   1434 wojtek    20   0  309580   7848   7044 S   0,0   0,1   0:00.02 at-spi-bus-laun
+   1443 wojtek    20   0  318416  10844   8848 S   0,0   0,1   0:00.29 gvfs-udisks2-vo
+   1448 wojtek    20   0    8560   4548   3996 S   0,0   0,1   0:00.03 dbus-daemon
+   1466 wojtek    20   0  317732   8220   7040 S   0,0   0,1   0:00.18 gvfs-afc-volume
+   1467 root      10 -10       0      0      0 S   0,0   0,0   0:00.00 krfcommd
+   1472 wojtek    20   0  238984   6720   6072 S   0,0   0,1   0:00.03 gvfs-mtp-volume
+   1477 wojtek    20   0  240072   7320   6432 S   0,0   0,1   0:00.03 gvfs-gphoto2-vo
+   1483 wojtek    20   0  239160   6816   6072 S   0,0   0,1   0:00.02 gvfs-goa-volume
+   1487 wojtek    20   0  650408  40812  33192 S   0,0   0,5   0:00.11 goa-daemon
+   1498 wojtek    20   0  340928  15584  13508 S   0,0   0,2   0:00.05 goa-identity-se
+   1552 wojtek    20   0  582960  21460  18384 S   0,0   0,3   0:00.14 gnome-shell-cal
+   1558 wojtek    20   0  394712  26092  22208 S   0,0   0,3   0:00.12 evolution-sourc
+   1568 wojtek    20   0 1121488  31412  26812 S   0,0   0,4   0:00.20 evolution-calen
+   1577 wojtek    20   0  156932   6044   5396 S   0,0   0,1   0:00.01 dconf-service
+   1580 wojtek    20   0  748592  28996  25216 S   0,0   0,4   0:00.10 evolution-addre
+   1596 wojtek    20   0  317392   9144   7852 S   0,0   0,1   0:00.05 gvfsd-trash
+   1606 wojtek    20   0  162680   7404   6676 S   0,0   0,1   0:00.02 at-spi2-registr
+   1607 wojtek    20   0 2601944  27820  22820 S   0,0   0,4   0:00.10 gjs
+   1620 wojtek    20   0    2888   1700   1600 S   0,0   0,0   0:00.00 sh
+   1621 wojtek    20   0  312912   7076   6364 S   0,0   0,1   0:00.01 gsd-a11y-settin
+   1626 wojtek    20   0  538896  27204  21160 S   0,0   0,3   0:00.23 gsd-color
+   1628 wojtek    20   0  377956  16524  14400 S   0,0   0,2   0:00.04 gsd-datetime
+   1635 wojtek    20   0  314420   8068   7168 S   0,0   0,1   0:00.16 gsd-housekeepin
+   1636 wojtek    20   0  343068  22316  17388 S   0,0   0,3   0:00.15 gsd-keyboard
+   1639 wojtek    20   0  645488  27400  21616 S   0,0   0,3   0:00.30 gsd-media-keys
+   1643 wojtek    20   0  644244  28292  21992 S   0,0   0,4   0:00.27 gsd-power
+   1644 wojtek    20   0  252384  11484   9968 S   0,0   0,1   0:00.02 gsd-print-notif
+   1647 wojtek    20   0  460384   7072   6240 S   0,0   0,1   0:00.04 gsd-rfkill
+   1648 wojtek    20   0  238816   6460   5856 S   0,0   0,1   0:00.01 gsd-screensaver
+   1654 wojtek    20   0  468432  11008   9216 S   0,0   0,1   0:00.31 gsd-sharing
+   1658 wojtek    20   0  388524   8340   7344 S   0,0   0,1   0:00.02 gsd-smartcard
+   1660 wojtek    20   0  321828   9880   8704 S   0,0   0,1   0:00.02 gsd-sound
+   1671 wojtek    20   0  343648  22960  17776 S   0,0   0,3   0:00.17 gsd-wacom
+   1690 wojtek    20   0  344884  15272  13276 S   0,0   0,2   0:00.03 gsd-printer
+   1710 wojtek    20   0  166008   7428   6708 S   0,0   0,1   0:00.01 ibus-memconf
+   1714 wojtek    20   0  350312  29500  18572 S   0,0   0,4   0:04.07 ibus-extension-
+   1715 wojtek    20   0  232264   7812   6276 S   0,0   0,1   0:00.02 gsd-disk-utilit
+   1717 wojtek    20   0  239788   7556   6912 S   0,0   0,1   0:00.07 ibus-portal
+   1725 wojtek    20   0  817380  66836  51488 S   0,0   0,8   0:00.38 evolution-alarm
+   1760 wojtek    20   0  716572 137568  51052 S   0,0   1,7   0:05.79 snap-store
+   1763 wojtek    20   0   76144  14272  12532 S   0,0   0,2   0:00.13 snapd-desktop-i
+   1867 wojtek    20   0  166008   7564   6784 S   0,0   0,1   0:08.48 ibus-engine-sim
+   1870 wojtek    20   0  306228  22996  15792 S   0,0   0,3   0:00.20 snapd-desktop-i
+   1874 wojtek    20   0  626276  14112  11576 S   0,0   0,2   0:00.27 xdg-desktop-por
+   1878 wojtek    20   0  378124  28588  20480 S   0,0   0,4   0:00.39 xdg-desktop-por
+   1988 wojtek    20   0 2602072  28252  22892 S   0,0   0,4   0:00.14 gjs
+   2012 wojtek    20   0  346936  26108  18832 S   0,0   0,3   0:00.25 xdg-desktop-por
+   2075 root      20   0  396028  32256  26772 S   0,0   0,4   0:00.98 fwupd
+   2080 wojtek    20   0  165568   6676   6116 S   0,0   0,1   0:00.01 gvfsd-metadata
+   2587 wojtek    20   0  571712  59428  45812 S   0,0   0,7   1:04.67 gnome-terminal-
+   2607 wojtek    20   0   13928   5640   3840 S   0,0   0,1   0:00.82 bash
+   2646 wojtek    20   0  423492  32156  24300 S   0,0   0,4   0:00.36 update-notifier
+   2696 wojtek    20   0   11,5g 355256 184720 S   0,0   4,5   0:27.09 firefox
+   2777 wojtek    20   0  568320  97768  58228 S   0,0   1,2   0:02.35 Xwayland
+   2787 wojtek    20   0  680276  81080  62208 S   0,0   1,0   0:00.37 gsd-xsettings
+   2814 wojtek    20   0  196380  24780  17928 S   0,0   0,3   0:00.11 ibus-x11
+   2881 wojtek    20   0  210612  34756  26688 S   0,0   0,4   0:00.08 Socket Process
+   2897 wojtek    20   0 2437368 102696  77968 S   0,0   1,3   0:00.99 Privileged Cont
+   2934 wojtek    20   0 1163032  18992  13140 S   0,0   0,2   0:00.04 snap
+   3006 wojtek    20   0 2422512  84120  64864 S   0,0   1,1   0:00.70 WebExtensions
+   3151 wojtek    20   0 2584320 171892  91640 S   0,0   2,2   0:30.58 Isolated Web Co
+   3152 wojtek    20   0 2395816  59228  47352 S   0,0   0,7   0:00.18 Web Content
+   3191 wojtek    20   0 2395816  60604  48600 S   0,0   0,8   0:00.18 Web Content
+   3219 wojtek    20   0 2395816  59936  47968 S   0,0   0,8   0:00.19 Web Content
+   3258 wojtek    20   0  933568  73816  52048 S   0,0   0,9   0:04.90 nautilus
+   3386 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 irq/39-mmc0
+   3387 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 irq/42-mmc1
+   3388 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 irq/125-mei_me
+   3396 root      20   0       0      0      0 I   0,0   0,0   0:02.66 kworker/u8:29-events_unbound
+   3397 root      20   0       0      0      0 I   0,0   0,0   0:02.61 kworker/u8:30-events_power_efficient
+   3403 root      20   0       0      0      0 I   0,0   0,0   0:02.06 kworker/u8:36-i915
+   3794 wojtek    20   0 2727800  64480  48992 S   0,0   0,8   0:03.57 gjs
+   4565 root      20   0       0      0      0 I   0,0   0,0   0:00.54 kworker/0:1-events
+   5304 root      20   0       0      0      0 I   0,0   0,0   0:00.00 kworker/1:1
+   5305 root      20   0       0      0      0 I   0,0   0,0   0:01.58 kworker/0:2-events
+   5815 root      20   0       0      0      0 I   0,0   0,0   0:00.20 kworker/0:0-events
+   5882 wojtek    20   0   13928   3768   1920 S   0,0   0,0   0:00.00 bash

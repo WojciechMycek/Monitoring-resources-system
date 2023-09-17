@@ -3,17 +3,17 @@
 6,2
 6,2
 %MEM
-0,2
-0,0
-3,6
+3,5
+0,1
+0,7
 TIME+
-0:01.49
-0:02.57
-5:47.58
+2:26.35
+0:08.20
+1:02.52
 COMMAND
-systemd-resolve
-acpid
 gnome-shell
+ibus-engine-sim
+gnome-terminal-
 
 
 
@@ -23,13 +23,13 @@ gnome-shell
 0,0
 0,0
 %MEM
-0,1
+0,0
 0,2
 0,0
 TIME+
 0:00.02
-0:02.39
-0:00.00
+0:02.16
+0:00.01
 COMMAND
 top
 systemd
@@ -39,21 +39,21 @@ kthreadd
 
 
 %CPU
-11,8
+5,9
 5,9
 5,9
 %MEM
-3,6
-0,8
 0,0
+3,5
+0,2
 TIME+
-6:25.68
-2:19.61
-0:01.98
+0:07.09
+2:31.03
+0:23.36
 COMMAND
+kworker/1:2-events
 gnome-shell
-gnome-terminal-
-kworker/1:0-events
+ibus-daemon
 
 
 

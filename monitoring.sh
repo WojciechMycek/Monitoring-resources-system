@@ -56,6 +56,7 @@ process_check_top(){
 #	order to human readeable format in ordered_defined_top_lines.txt
 	
 	lists_cpu_value=()
+	lists_cpu_value_transformed=()
 	point="."
 
 	#top to file
@@ -90,9 +91,20 @@ process_check_top(){
 
 	for element in ${lists_cpu_value[@]}
 	do
-		echo "$element"
+		echo "$element" | sed "s/,/$point/g" >> transformed.txt
 	done
-		
+
+	for i in {1..4}
+	do	
+		column=1
+		lists_cpu_value_transformed[i]+=$(awk 'NR == '$i' {print $'$column'}' transformed.txt)
+	done
+
+	for element in ${lists_cpu_value_transformed[@]}
+	do	
+		echo "Przeformatowane wartosci w liscie $element"
+	done
+
 }
 
 process_check_top
