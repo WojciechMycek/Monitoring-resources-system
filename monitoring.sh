@@ -48,14 +48,21 @@ disk_check_file(){
 process_check_top(){
 
 #Function defined to provide information about process in real time
+#top to file
+#	address top command output to file
+#for i & awk
+#	address column and lines and then print its out
 	
 	#top to file
 	top -b -n 1 > top.txt
 	sed '1,6d' top.txt
-	grep -n "CPU" top.txt
-	#cat cpu.txt	
+
+	#grep -n "CPU" top.txt
+	#cat cpu.txt
+
 	for i in {1..5}
-	do
+	do	
+		echo -e "\n"
 		for j in {1..4}
 		do	
 			column=$((8+$i))
@@ -64,6 +71,8 @@ process_check_top(){
 			echo $argument
 		done
 	done
+
+	$argument >> defined_top_lines.txt
 	
 }
 
