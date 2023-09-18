@@ -1,4 +1,7 @@
 compare_float_arguments() {
+
+    #based on output decide which value is the biggest one
+    
     if (( $(echo "$1 == $2" | bc -l) )) && (( $(echo "$2 == $3" | bc -l) ))
     then
         echo "Values are the same"
@@ -62,8 +65,6 @@ disk_check_file(){
 }
 
 process_check_top(){
-	
-	set -x
 #Function defined to provide information about process in real time
 #top to file
 #	address top command output to file
@@ -154,3 +155,4 @@ process_check_top(){
 }
 
 process_check_top
+./delete_logs.sh
