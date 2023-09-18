@@ -1,18 +1,18 @@
 compare_float_arguments(){
-	if [ ( $(echo "$num1 == $num2" |bc -l)) && ( $(echo "$num2 == $num3" |bc -l)) ]
+	if [ $(echo "$num1 == $num2" | bc -l) ] && [ $(echo "$num2 == $num3" | bc -l) ]
 	then
-		echo Values of process are the same
-	elif [ ( $(echo "$num1 >= $num2" |bc -l)) && ( $(echo "$num1 >= $num3" |bc -l))]
+		echo "Values of process are the same"
+	elif [ $(echo "$num1 >= $num2" | bc -l) ] && [ $(echo "$num1 >= $num3" | bc -l) ]
 	then
 		echo "The biggest is $num1"
-	elif [ ( $(echo "$num2 >= $num1" |bc -l)) && ( $(echo "$num2 >= $num3" |bc -l)) ]
+	elif [ $(echo "$num2 >= $num1" | bc -l) ] && [ $(echo "$num2 >= $num3" | bc -l) ]
 	then
 		echo "The biggest is $num2"
 	else
 		echo "The biggest is $num3"
 	fi
 }
-
+S
 disk_check_file(){
 
 #Function defined to provide information about disk and check how much is exceeded
@@ -112,9 +112,12 @@ process_check_top(){
 	do
 		echo "$element" | sed "s/,/$point/g" >> transformed.txt
 	done
-
+	
+	#delete %CPU as first line of file
+	sed -i "1d" transformed.txt
+	
 	#create new list of transformed values from previous list and create new one with output of modified text file
-	for i in {1..4}
+	for i in {1..3}
 	do	
 		column=1
 		lists_cpu_value_transformed[i]+=$(awk 'NR == '$i' {print $'$column'}' transformed.txt)
@@ -126,20 +129,21 @@ process_check_top(){
 		echo "Przeformatowane wartosci w liscie $element"
 	done
 	
+	#str to float
+	for ((i=0; i<${#lists_cpu_value_transformed[@]}; i++))
+	do
+    		lists_cpu_value_transformed[i]=$(echo "${lists_cpu_value_transformed[i]}" | bc -l)
+	done
+	
+	for ((i=0; i<${#lists_cpu_value_transformed[@]}; i++))
+	do
+    		echo "Element $i: ${lists_cpu_value_transformed[i]}"
+	done
+
+	
 	#check which value is the biggest
-	if [ $lists_cpu_value_transformed[1] == $lists_cpu_value_transformed[2] ] && [ $lists_cpu_value_transformed[2] == $lists_cpu_value_transformed[3] ]
-	then
-		echo "All process takes the same exxact amount of memory"
-		echo "Memory of value eq: $lists_cpu_values[1]"
-	elif [ $lists_cpu_value_transformed[1] > $lists_cpu_value_transformed[2] ] && [ $lists_cpu_value_transformed[2] > $lists_cpu_value_transformed[3] ]
-	then
-		echo "The biggest is: $lists_cpu_value_transformed[1]"
-	elif [ $lists_cpu_value_transformed[2] > $lists_cpu_value_transformed[1] ] && [ $lists_cpu_value_transformed[2] > $lists_cpu_value_transformed[3] ]
-	then
-		echo "The biggest is: $lists_cpu_value_transformed[2]"
-	else
-		echo "The biggest is $lists_cpu_value_transformed[3]"
-	fi
+	compare_float_arguments "${lists_cpu_value_transformed[1]}" "${lists_cpu_value_transformed[2]}" "${lists_cpu_value_transformed[3]}"
+
 }
 
 process_check_top
