@@ -77,34 +77,41 @@ process_check_top(){
 			awk 'NR == '$line' {print $'$column'}' top.txt >> defined_top_lines.txt
 		done
 	done
+
+	#Order defined top values in human readeble form
 	paste - - - - < defined_top_lines.txt > ordered_defined_top_lines.txt
 	cat ordered_defined_top_lines.txt
-
+	
 	grep -n "CPU" ordered_defined_top_lines.txt
-
+	
+	#create new list and fill it with ordered lines from text file
 	for i in {0..3}
 	do
 		line=1
 		column=$((1+$i))
 		lists_cpu_value[i]+=$(awk 'NR == '$line' {print $'$column'}' ordered_defined_top_lines.txt)
 	done
-
+	
+	#For future equations make change from , to . to transform it easy from str type to float type
 	for element in ${lists_cpu_value[@]}
 	do
 		echo "$element" | sed "s/,/$point/g" >> transformed.txt
 	done
 
+	#create new list of transformed values from previous list and create new one with output of modified text file
 	for i in {1..4}
 	do	
 		column=1
 		lists_cpu_value_transformed[i]+=$(awk 'NR == '$i' {print $'$column'}' transformed.txt)
 	done
-
+	
+	#print values
 	for element in ${lists_cpu_value_transformed[@]}
 	do	
 		echo "Przeformatowane wartosci w liscie $element"
 	done
 	
+	#check which value is the biggest
 	if [ $lists_cpu_value_transformed[1] == $lists_cpu_value_transformed[2] ] && [ $lists_cpu_value_transformed[2] == $lists_cpu_value_transformed[3] ]
 	then
 		echo "All process takes the same exxact amount of memory"
