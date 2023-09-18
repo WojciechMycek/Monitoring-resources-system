@@ -3,17 +3,17 @@
 5,9
 5,9
 %MEM
-0,3
-3,6
-0,2
+3,7
+0,1
+0,8
 TIME+
-5:55.82
-4:44.06
-0:31.84
+6:06.26
+0:12.98
+1:25.56
 COMMAND
-pulseaudio
 gnome-shell
-ibus-daemon
+ibus-engine-sim
+gnome-terminal-
 
 
 

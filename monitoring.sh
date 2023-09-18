@@ -1,18 +1,19 @@
-compare_float_arguments(){
-	if [ $(echo "$num1 == $num2" | bc -l) ] && [ $(echo "$num2 == $num3" | bc -l) ]
-	then
-		echo "Values of process are the same"
-	elif [ $(echo "$num1 >= $num2" | bc -l) ] && [ $(echo "$num1 >= $num3" | bc -l) ]
-	then
-		echo "The biggest is $num1"
-	elif [ $(echo "$num2 >= $num1" | bc -l) ] && [ $(echo "$num2 >= $num3" | bc -l) ]
-	then
-		echo "The biggest is $num2"
-	else
-		echo "The biggest is $num3"
-	fi
+compare_float_arguments() {
+    if (( $(echo "$1 == $2" | bc -l) )) && (( $(echo "$2 == $3" | bc -l) ))
+    then
+        echo "Values are the same"
+    elif (( $(echo "$1 >= $2" | bc -l) )) && (( $(echo "$1 >= $3" | bc -l) ))
+    then
+        echo "The biggest is $1"
+    elif (( $(echo "$2 >= $1" | bc -l) )) && (( $(echo "$2 >= $3" | bc -l) ))
+    then
+        echo "The biggest is $2"
+    else
+        echo "The biggest is $3"
+    fi
 }
-S
+
+
 disk_check_file(){
 
 #Function defined to provide information about disk and check how much is exceeded
@@ -61,7 +62,8 @@ disk_check_file(){
 }
 
 process_check_top(){
-
+	
+	set -x
 #Function defined to provide information about process in real time
 #top to file
 #	address top command output to file
@@ -139,6 +141,11 @@ process_check_top(){
 	do
     		echo "Element $i: ${lists_cpu_value_transformed[i]}"
 	done
+	
+	
+	#num1=44.5
+	#num2=8.7
+	#num3=12.3
 
 	
 	#check which value is the biggest
