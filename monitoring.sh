@@ -1,3 +1,18 @@
+compare_float_arguments(){
+	if [ ( $(echo "$num1 == $num2" |bc -l)) && ( $(echo "$num2 == $num3" |bc -l)) ]
+	then
+		echo Values of process are the same
+	elif [ ( $(echo "$num1 >= $num2" |bc -l)) && ( $(echo "$num1 >= $num3" |bc -l))]
+	then
+		echo "The biggest is $num1"
+	elif [ ( $(echo "$num2 >= $num1" |bc -l)) && ( $(echo "$num2 >= $num3" |bc -l)) ]
+	then
+		echo "The biggest is $num2"
+	else
+		echo "The biggest is $num3"
+	fi
+}
+
 disk_check_file(){
 
 #Function defined to provide information about disk and check how much is exceeded
