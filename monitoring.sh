@@ -2,17 +2,43 @@ compare_float_arguments() {
 
     #based on output decide which value is the biggest one
     
+    wynik=0
+    
     if (( $(echo "$1 == $2" | bc -l) )) && (( $(echo "$2 == $3" | bc -l) ))
     then
+    	wynik=1
         echo "Values are the same"
     elif (( $(echo "$1 >= $2" | bc -l) )) && (( $(echo "$1 >= $3" | bc -l) ))
     then
+    	wynik=2
         echo "The biggest is $1"
     elif (( $(echo "$2 >= $1" | bc -l) )) && (( $(echo "$2 >= $3" | bc -l) ))
     then
+    	wynik=3
         echo "The biggest is $2"
     else
+    	wynik=4
         echo "The biggest is $3"
+    fi
+    
+    echo " HALO: $wynik"
+    
+    grep -n "COMMAND" ordered_defined_top_lines.txt > command.txt
+    
+    if [ "$wynik" == 1 ]
+    then
+    	awk '(NR == 1) {print $2}' command.txt
+    	awk '(NR == 1) {print $3}' command.txt
+    	awk '(NR == 1) {print $4}' command.txt
+    elif [ "$wynik" == 2 ]
+    then
+    	awk '(NR == 1) {print $2}' command.txt
+    elif [ "$wynik" == 3 ]
+    then
+    	awk '(NR == 1) {print $3}' command.txt
+    elif [ "$wynik" == 4 ]
+    then
+    	awk '(NR == 1) {print $4}' command.txt
     fi
 }
 
@@ -146,13 +172,17 @@ process_check_top(){
 	
 	#num1=44.5
 	#num2=8.7
-	#num3=12.3
+	#num3=12.3y
 
 	
 	#check which value is the biggest
 	compare_float_arguments "${lists_cpu_value_transformed[1]}" "${lists_cpu_value_transformed[2]}" "${lists_cpu_value_transformed[3]}"
+	
+	#take_value_from_function
+	#wynik+=$(compare_float_arguments)
+	#echo "Wynik: $wynik"
 
 }
 
 process_check_top
-./delete_logs.sh
+
