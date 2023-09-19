@@ -1,1 +1,1 @@
-4:COMMAND	top	gnome-shell	systemd
+4:COMMAND	kworker/0:2-events	ibus-daemon	top

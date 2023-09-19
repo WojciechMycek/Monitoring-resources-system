@@ -32,14 +32,33 @@ compare_float_arguments() {
     	awk '(NR == 1) {print $4}' command.txt
     elif [ "$wynik" == 2 ]
     then
-    	awk '(NR == 1) {print $2}' command.txt
+    	proces_name=$(awk '(NR == 1) {print $2}' command.txt)
+    	echo "Proces: $proces_name"
     elif [ "$wynik" == 3 ]
     then
-    	awk '(NR == 1) {print $3}' command.txt
+    	proces_name=$(awk '(NR == 1) {print $3}' command.txt)
+    	echo "Proces: $proces_name"
     elif [ "$wynik" == 4 ]
     then
-    	awk '(NR == 1) {print $4}' command.txt
+    	proces_name=$(awk '(NR == 1) {print $4}' command.txt)
+    	echo "Proces: $proces_name"
     fi
+    
+    if [ "$wynik == 2" ] || [ "$wynik == 3" ] || [ "$wynik == 4" ]
+    then
+    	echo "Do you want do delete this process?"
+    	read user_decision
+    	echo "$user_decision"
+    	if [ "$user_decision = 1" ]
+    	then
+    		pkill "$proces_name"
+    		echo "Process is killed"
+    	elif [ "$user_decision = 2" ]
+    	then
+    		echo "Process is not killed"
+    	fi
+    fi
+    
 }
 
 
