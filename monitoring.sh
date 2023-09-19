@@ -49,13 +49,15 @@ compare_float_arguments() {
     	echo "Do you want do delete this process?"
     	read user_decision
     	echo "$user_decision"
-    	if [ "$user_decision = 1" ]
+    	if [ "$user_decision" == 1 ]
     	then
     		pkill "$proces_name"
     		echo "Process is killed"
-    	elif [ "$user_decision = 2" ]
+    	elif [ "$user_decision" = 2 ]
     	then
     		echo "Process is not killed"
+    	else
+    		echo "Invalid option"
     	fi
     fi
     

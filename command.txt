@@ -1,1 +1,2 @@
-4:COMMAND	kworker/0:2-events	ibus-daemon	top
+4:COMMAND	nautilus	gnome-shell	top
+9:COMMAND	Isolated	top	systemd
