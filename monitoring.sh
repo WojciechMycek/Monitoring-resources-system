@@ -128,6 +128,7 @@ process_check_top(){
 	top -b -n 1 > top.txt
 	sed '1,6d' top.txt
 	clear
+	touch defined_top_lines.txt
 
 	#grep -n "CPU" top.txt
 	#cat cpu.txt
@@ -144,6 +145,7 @@ process_check_top(){
 	done
 
 	#Order defined top values in human readeble form
+	touch ordered_defined_top_lines.txt
 	paste - - - - < defined_top_lines.txt > ordered_defined_top_lines.txt
 	cat ordered_defined_top_lines.txt
 	
@@ -206,4 +208,5 @@ process_check_top(){
 }
 
 process_check_top
+disk_check_file
 

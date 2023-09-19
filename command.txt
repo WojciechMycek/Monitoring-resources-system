@@ -1,2 +1,1 @@
-4:COMMAND	nautilus	gnome-shell	top
-9:COMMAND	Isolated	top	systemd
+4:COMMAND	gnome-shell	Isolated	top
