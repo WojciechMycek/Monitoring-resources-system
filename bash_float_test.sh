@@ -19,7 +19,7 @@ fi
 compare_float(){
 	if (( $(echo "$num1 >= $num2" |bc -l)))
 	then
-		echo JESTESMY ROWNE
+		echo JESTESMY ROWNE!
 	fi
 }
 
